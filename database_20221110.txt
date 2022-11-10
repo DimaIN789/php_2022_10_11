@@ -1,0 +1,22 @@
+CREATE TABLE Persons (
+Personid int NOT NULL AUTO_INCREMENT,
+name text NOT NULL,
+age int,
+age_days int,
+address text,
+PRIMARY KEY (Personid)
+);
+
+INSERT INTO Persons (name, age, age_days, address)
+VALUES ('Dima', 33, 33*365, 'adr1');
+
+INSERT INTO Persons (name, age, age_days,  address)
+VALUES ('Vasij', 28, 28*365, 'adr4');
+
+INSERT INTO Persons (name, age, age_days, address)
+VALUES ('Petiy', 23, 23*365, 'adr3');
+
+INSERT INTO Persons (name, age, age_days, address)
+VALUES ('Masha', 40, 40*365, 'adr2');
+
+SELECT * FROM Persons WHERE age  > 20;
